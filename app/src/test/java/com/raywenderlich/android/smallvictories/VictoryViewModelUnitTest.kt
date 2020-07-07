@@ -13,4 +13,12 @@ class VictoryViewModelUnitTest {
 
         assertEquals(25, res)
     }
+
+    @Test
+    fun addNumbersTest() {
+        var viewModel = VictoryViewModel()
+        val res = viewModel.addNumbers(10, 5)
+
+        assertEquals(15, res)
+    }
 }

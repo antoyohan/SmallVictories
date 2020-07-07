@@ -111,7 +111,7 @@ class VictoryViewModelTest {
     stubVictoryRepositoryGetVictoryCount(previousCount)
     viewModel.incrementVictoryCount()
     verify(viewStateObserver)
-            .onChanged(VictoryUiModel.CountUpdated(previousCount))
+            .onChanged(VictoryUiModel.CountUpdated(previousCount + 4))
   }
 
   @Test
