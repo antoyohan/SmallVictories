@@ -54,7 +54,7 @@ class MainActivityTest {
 
     @Test
     fun tappingOnTitleOpensEditDialog() {
-        onView(git push -u origin masterwithId(R.id.textVictoryTitle))
+        onView(withId(R.id.textVictoryTitle))
                 .perform(click())
 
         onView(withId(R.id.alertTitle))
