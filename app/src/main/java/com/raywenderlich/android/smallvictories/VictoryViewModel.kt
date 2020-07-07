@@ -60,5 +60,9 @@ class VictoryViewModel : ViewModel() {
   fun reset() {
     // TODO reset existing victory title and count
   }
+
+  fun addNumbers(x:Int, y:Int): Int {
+    return x + y;
+  }
 }
 
