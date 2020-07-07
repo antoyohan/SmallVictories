@@ -85,7 +85,8 @@ class MainActivity : AppCompatActivity() {
         textVictoryTitle.text = uiModel.title
       }
       is VictoryUiModel.CountUpdated -> {
-        textVictoryCount.text = uiModel.count.toString()
+        val count = uiModel.count.toString()
+        textVictoryCount.text = count
       }
     }
   }
