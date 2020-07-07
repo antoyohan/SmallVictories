@@ -82,7 +82,8 @@ class MainActivity : AppCompatActivity() {
   private fun render(uiModel: VictoryUiModel) {
     when (uiModel) {
       is VictoryUiModel.TitleUpdated -> {
-        textVictoryTitle.text = uiModel.title
+        val title = uiModel.title
+        textVictoryTitle.text = title
       }
       is VictoryUiModel.CountUpdated -> {
         textVictoryCount.text = uiModel.count.toString()
